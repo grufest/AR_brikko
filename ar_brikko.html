@@ -6,8 +6,8 @@
         <link rel="preload" href="js/aframe.min.js" as="script">
         <link rel="preload" href="js/aframe-extras.min.js" as="script">
 
-        <script src="js/aframe.min.js" defer></script>
-        <script src="js/aframe-extras.min.js" defer></script>
+        <script src="js/aframe.min.js"></script>
+        <script src="js/aframe-extras.min.js"></script>
 
         <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -17,7 +17,7 @@
         });
         </script>
 
-        <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/2.0.0/aframe/build/aframe-ar.min.js" defer></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/2.0.0/aframe/build/aframe-ar.min.js"></script>
         
 
     </head>
@@ -29,7 +29,7 @@
         <a-scene embedded 
         arjs="sourceType: webcam; detectionMode: mono_tracking; debugUIEnabled: false;" 
         gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/;">
-        
+
             <!-- Marker Hiro -->
                 <a-assets rotation="10 25 0">
                     <a-asset-item id="livello0Scii" src="3d/livelliBianchi.glb"></a-asset-item>
