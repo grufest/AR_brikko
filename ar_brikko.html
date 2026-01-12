@@ -3,18 +3,13 @@
         <title> AR di brikko </title>
          <!--<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>aframe-extras con animation-mixer <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>-->
             
-        <link rel="preload" href="js/aframe.min.js" as="script">
-        <link rel="preload" href="js/aframe-extras.min.js" as="script">
+        
 
         <script src="js/aframe.min.js"></script>
         <script src="js/aframe-extras.min.js"></script>
 
-        <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            if (typeof AFRAME !== 'undefined' && AFRAME.EXTRAS) {
-            AFRAME.registerComponent('animation-mixer', AFRAME.EXTRAS.animationMixer);
-            }
-        });
+         <script>
+        AFRAME.registerComponent('animation-mixer', AFRAME.EXTRAS.animationMixer);
         </script>
 
         <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/2.0.0/aframe/build/aframe-ar.min.js"></script>
@@ -24,11 +19,7 @@
 
     <body style='margin : 0px; overflow: hidden;'>
 
-
-
-        <a-scene embedded 
-        arjs="sourceType: webcam; detectionMode: mono_tracking; debugUIEnabled: false;" 
-        gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/;">
+        <a-scene  embedded  arjs="sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; debugUIEnabled: false;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/versioned/decoders/1.4.1/;">
 
             <!-- Marker Hiro -->
                 <a-assets rotation="10 25 0">
